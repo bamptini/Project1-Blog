@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 80px 1000px 200px;
+    grid-template-rows: 80px 900px 200px 200px;
     grid-template-areas: 
         "hd hd hd hd hd"
         "cont cont cont cont cont"
@@ -13,9 +13,9 @@
     width: 95vw;
     justify-content: center;
     margin: auto;
-  }
+}
   
-  .box-head{
+.box-head{
       /* row start/column start/ row end/ column end */
       display: flex;
       box-direction: row;
@@ -23,64 +23,105 @@
       width: 95vw;
       justify-content:center;
       border: 1px solid red;
-  }
-  .box-con{
+}
+.box-con{
       /* row start/column start/ row end/ column end */
       display: flex;
       box-direction: row;
       grid-area:cont;
       justify-content:center;
       border: 1px solid red;
-  }
-  .box-footer{
-      /* row start/column start/ row end/ column end */
+}
+/*.box-footer{
+      /* row start/column start/ row end/ column end
       display: flex;
       box-direction: row;
       grid-area:ft;
       width: 95vw;
       justify-content:center;
       border: 1px solid red;
-  }
+}*/
+
+.footer-box{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    /*border: 1px solid red;*/
+    /*background: #F8FA9D;*/
+    width:100%;
+}
+
+.footer{
+    margin:auto;
+    grid-area:ft;
+    height: 100%;
+    justify-content: center;
+    /*position: fixed;*/ 
+    background-color: #444; 
+}
   
-  .box-side{
+.box-side{
       /* row start/column start/ row end/ column end */
       display: flex;
       box-direction: row;
       grid-area:side;
       justify-content:center;
       border: 1px solid red;
-  }
+}
   
-  .grid-container > div {
+.grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 0px 0;
     font-size: 30px;
-  }
+}
   
-  #headBox {
+#headBox {
   /*grid-area:hd;*/
   font-size: small;
-  }
+}
   
-  #sideBox {
+#sideBox {
   grid-area:side;
-  }
+}
   
-  #conBox {
+#conBox {
   grid-area:cont;
-  }
+}
   
-  #footBox {
+#footBox {
   grid-area:ft;
-  }
+}
+
+.con {
+    display:flex;
+    /*width:25vw;*/ 
+    justify-content: center;
+    color: #444;
+}
+
+.twit{
+    /* row start/column start/ row end/ column end */
+    grid-area: twitter; 
+}
+
+.face{
+    /* row start/column start/ row end/ column end */
+    grid-area: facebook;   
+}
+
+.mail{
+    /* row start/column start/ row end/ column end */
+    grid-area: mail;    
+}
 
   /* NESTED GRID AND FLEXBOX FOR CONTENT IMAGES*/
 
+
 #nestedGrid-container {
     display: grid;
-    grid-auto-rows: repeat(3, 100%);
-    grid-template-columns: repeat(3, 30%);
+    grid-auto-rows: repeat(5, 300px);
+    grid-template-columns: repeat(2, 300px);
     /*grid-template-rows: 50px 50px 50px;*/
     /*grid-auto-rows: 33% 33% 33%;
     grid-template-columns: repeat(3, 33%);*/
@@ -88,10 +129,56 @@
     background-color: #173a57;
     padding: 10px;
     justify-content: center;
+    /*height:100%;*/
+   
+}
+
+/*NESTED SIDE BAR*/
+
+#nestedSide-container {
+    display: grid;
+    grid-auto-rows: repeat(4, 50px);
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    /*height:100%;*/
+   
+}
+
+/*NESTED FOOTER GRID*/
+
+.nestedFootGrid{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "twitter"
+    "facebook" 
+    "email";
+    grid-gap: 15px;
+    /*border: 5px solid rgb(80, 31, 158);*/
+    justify-content: center;
+    /*width: 90vw;*/
+}
+
+/*#nestedGrid-container {
+    display: grid;
+    grid-auto-rows: repeat(3, 100%);
+    grid-template-columns: repeat(3, 30%);
+    /*grid-template-rows: 50px 50px 50px;*/
+    /*grid-auto-rows: 33% 33% 33%;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 10px;
+    background-color: #173a57;
+    padding: 10px;
+    justify-content: center;
     height:100%;
     margin:auto;
 
-  }
+  }*/
 
 /*#nestedBox-con{
     /* row start/column start/ row end/ column end
@@ -112,21 +199,86 @@
     justify-content: center;
 }
 
-#imgOne{    
+#img1{    
     background-image: url('../images/avatar3.png');
     background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
-    /*max-width:100%;*/
-
+    /*width:100%;*/
 }
 
+#img2{    
+    background-image: url('../images/avatar3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
 
-@media(min-width:1100px){
+#img3{    
+    background-image: url('../images/avatar3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#img4{    
+    background-image: url('../images/avatar3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#img5{    
+    background-image: url('../images/avatar3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#img6{    
+    background-image: url('../images/avatar3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+/*#img7{    
+    background-image: url('../images/avatar3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width:100%;
+}*/
+
+/*MEDIA QUERIES*/
+
+.sideBox{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    background-size:20rem;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.sidebar{
+    /*display: block;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    align-items: center;
+}
+
+@media(min-width:1230px){
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 80px 1000px 200px;
+    grid-template-rows: 80px 665px 200px;
     grid-template-areas: 
         "hd hd hd hd hd"
         "side cont cont cont cont"
@@ -139,12 +291,68 @@
     margin: auto;
   }}
 
-  @media(min-width:1100px){
+  @media(max-width:670px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: 80px 2100px 200px 200px;
+        grid-template-areas: 
+            "hd hd hd hd hd"
+            "cont cont cont cont cont"
+            "side side side side side"
+            "ft ft ft ft ft";
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        width: 95vw;
+        justify-content: center;
+        margin: auto;
+      }}
+
+  @media(min-width:1230px){
+    #nestedGrid-container {
+      display: grid;
+      grid-auto-rows: 300px 300px;
+      grid-template-columns: repeat(3, 300px);
+      grid-gap: 10px;
+      background-color: #173a57;
+      padding: 10px;
+      justify-content: center;
+      height:92%;
+    }}
+
+    
+  @media(max-width:670px){
+    #nestedGrid-container {
+      display: grid;
+      grid-auto-rows: repeat(6, 300px);
+      grid-template-columns: repeat(1, 300px);
+      grid-gap: 10px;
+      background-color: #173a57;
+      padding: 10px;
+      justify-content: center;
+      height:92%;
+    }}
+
+  @media(min-width:1250px){
+    .nestedFootGrid{
+        display:grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "twitter" "facebook" "email";
+        grid-gap: 15px;
+        /*border: 5px solid rgb(39, 177, 26);*/
+        justify-content: center;
+    
+    }}
+
+  /*@media(min-width:1100px){
   #nestedGrid-container {
     display: grid;
     /*grid-auto-rows: (minmax)auto;
     grid-template-columns: repeat(3, 30%);*/
-    /*grid-template-rows: 50px 50px 50px;*/
+    /*grid-template-rows: 50px 50px 50px;
     grid-auto-rows: 33% 33% 33%;
     grid-template-columns: repeat(3, 33%);
     grid-gap: 10px;
@@ -153,7 +361,7 @@
     justify-content: center;
     height:100%;
     margin:auto;
-  }}
+  }}*/
   
 
   
