@@ -18,7 +18,9 @@
 body{
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+    color: #444;
 }
+
 
 .box{
     display:flex;
@@ -132,9 +134,9 @@ body{
     /*width: 90vw;*/
 }
 
-.nestedFootGrid{
+#nestedFootGrid{
     display:grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "twitter"
     "facebook" 
@@ -163,7 +165,7 @@ body{
 }}
 
 @media(min-width:1250px){
-    .nestedFootGrid{
+    #nestedFootGrid{
         display:grid;
         grid-template-columns: 30vw 30vw 30vw;
         grid-template-rows: auto;
@@ -257,7 +259,7 @@ body{
 	bottom: 0;
 	left: 0;
     color: #444;
-	background: linear-gradient(#77c9f1, #0b586d);
+	background: linear-gradient(#0079B1, #00C9FF) ;
 	z-index: 4;
 	width: 100%;
 	box-sizing: border-box;
@@ -347,16 +349,18 @@ body{
     height:50px;    
 }
 
-.footer-text {
 
-    padding-bottom: 90px;   
-    
-}
-
-.footer-text p{
+.footer-text1 p{
     color: white;
     text-align: center;
-    font-style: italic;
+    font-size: 14px;
+}
+
+.footer-text2 p{
+    color: #0079B1;
+    text-align: center;
+    font-size: 12px;
+
 }
 
 /*@media(min-width:1000px){
