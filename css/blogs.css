@@ -1,3 +1,8 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -8,7 +13,7 @@
         "side side side side side"
         "ft ft ft ft ft";
     grid-gap: 10px;
-    background-color: #2196F3;
+    /*background-color: #2196F3;*/
     padding: 10px;
     width: 95vw;
     justify-content: center;
@@ -22,7 +27,7 @@
       grid-area:hd;
       width: 95vw;
       justify-content:center;
-      border: 1px solid red;
+      /*border: 1px solid red;*/
 }
 .box-con{
       /* row start/column start/ row end/ column end */
@@ -30,7 +35,7 @@
       box-direction: row;
       grid-area:cont;
       justify-content:center;
-      border: 1px solid red;
+      /*border: 1px solid red;*/
 }
 /*.box-footer{
       /* row start/column start/ row end/ column end
@@ -57,7 +62,7 @@
     height: 100%;
     justify-content: center;
     /*position: fixed;*/ 
-    background-color: #444; 
+    /*background-color: #444; */
 }
   
 .box-side{
@@ -66,11 +71,11 @@
       box-direction: row;
       grid-area:side;
       justify-content:center;
-      border: 1px solid red;
+      /*border: 1px solid #444;*/
 }
   
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    /*background-color: #fff;*/
     text-align: center;
     padding: 0px 0;
     font-size: 30px;
@@ -126,7 +131,7 @@
     /*grid-auto-rows: 33% 33% 33%;
     grid-template-columns: repeat(3, 33%);*/
     grid-gap: 10px;
-    background-color: #173a57;
+    background-color: #fff;
     padding: 10px;
     justify-content: center;
     /*height:100%;*/
@@ -138,7 +143,7 @@
 #nestedSide-container {
     display: grid;
     grid-auto-rows: repeat(4, 50px);
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: repeat(3, 20%);
     grid-gap: 10px;
     background-color: #fff;
     padding: 10px;
@@ -151,9 +156,9 @@
 
 /*NESTED FOOTER GRID*/
 
-.nestedFootGrid{
+#nestedFootGrid{
     display:grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "twitter"
     "facebook" 
@@ -199,61 +204,171 @@
     justify-content: center;
 }
 
-#img1{    
+#imgLife1{    
     background-image: url('../images/avatar3.png');
-    background-size: contain;
+    /* background-size: contain;
+    */
     background-repeat: no-repeat;
     justify-content: center;
     /*width:100%;*/
 }
 
-#img2{    
+#imgLife2{    
     background-image: url('../images/avatar3.png');
-    background-size: contain;
+    /* background-size: contain;
+    */
     background-repeat: no-repeat;
     justify-content: center;
     /*width:100%;*/
 }
 
-#img3{    
+#imgLife3{    
     background-image: url('../images/avatar3.png');
-    background-size: contain;
+    /* background-size: contain;
+    */
     background-repeat: no-repeat;
     justify-content: center;
     /*width:100%;*/
 }
 
-#img4{    
+#imgLife4{    
     background-image: url('../images/avatar3.png');
-    background-size: contain;
+    /* background-size: contain;
+    */
     background-repeat: no-repeat;
     justify-content: center;
     /*width:100%;*/
 }
 
-#img5{    
+#imgLife5{    
     background-image: url('../images/avatar3.png');
-    background-size: contain;
+    /* background-size: contain;
+    */
     background-repeat: no-repeat;
     justify-content: center;
     /*width:100%;*/
 }
 
-#img6{    
+#imgLife6{    
     background-image: url('../images/avatar3.png');
-    background-size: contain;
+    /* background-size: contain;
+    */
     background-repeat: no-repeat;
     justify-content: center;
     /*width:100%;*/
 }
 
-/*#img7{    
-    background-image: url('../images/avatar3.png');
-    background-size: contain;
+/*CAR IMAGES*/
+
+#imgCar1{    
+    background-image: url('../images/mini-france1.png');
+    /* background-size: contain;
+    */
     background-repeat: no-repeat;
     justify-content: center;
-    width:100%;
-}*/
+    /*width:100%;*/
+}
+
+#imgCar2{    
+    background-image: url('../images/mini-france2.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#imgCar3{    
+    background-image: url('../images/mini-respray1.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#imgCar4{    
+    background-image: url('../images/mini-rebuild.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#imgCar5{    
+    background-image: url('../images/mini-goodwood.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#imgCar6{    
+    background-image: url('../images/mini-drive1.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+/*WORK IMAGES*/
+
+#imgWork1{    
+    background-image: url('../images/work1.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#imgWork2{    
+    background-image: url('../images/work2.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#imgWork3{    
+    background-image: url('../images/work3.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#imgWork4{    
+    background-image: url('../images/work4.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#imgWork5{    
+    background-image: url('../images/work5.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
+
+#imgWork6{    
+    background-image: url('../images/work6.png');
+    /* background-size: contain;
+    */
+    background-repeat: no-repeat;
+    justify-content: center;
+    /*width:100%;*/
+}
 
 /*MEDIA QUERIES*/
 
@@ -284,7 +399,7 @@
         "side cont cont cont cont"
         "ft ft ft ft ft";
     grid-gap: 10px;
-    background-color: #2196F3;
+    /*background-color: #4444;*/
     padding: 10px;
     width: 95vw;
     justify-content: center;
@@ -302,7 +417,7 @@
             "side side side side side"
             "ft ft ft ft ft";
         grid-gap: 10px;
-        background-color: #2196F3;
+        /*background-color: #2196F3;*/
         padding: 10px;
         width: 95vw;
         justify-content: center;
@@ -315,7 +430,7 @@
       grid-auto-rows: 300px 300px;
       grid-template-columns: repeat(3, 300px);
       grid-gap: 10px;
-      background-color: #173a57;
+      background-color: #fff;
       padding: 10px;
       justify-content: center;
       height:92%;
@@ -328,14 +443,41 @@
       grid-auto-rows: repeat(6, 300px);
       grid-template-columns: repeat(1, 300px);
       grid-gap: 10px;
-      background-color: #173a57;
+      background-color: #fff;
       padding: 10px;
       justify-content: center;
       height:92%;
     }}
 
-  @media(min-width:1250px){
-    .nestedFootGrid{
+
+    @media(min-width:1230px){
+    #nestedSide-container {
+        display: grid;
+        grid-auto-rows: repeat(3, 3fr);
+        grid-template-columns: repeat(1, 30%);
+        grid-gap: 10px;
+        background-color: #fff;
+        padding: 10px;
+        justify-content: center;
+        height:92%;
+     }}
+
+    @media(max-width:670px){
+    #nestedSide-container {
+        display: grid;
+        grid-auto-rows: repeat(1, 50px);
+        grid-template-columns: repeat(3, 20%);
+        grid-gap: 10px;
+        background-color: #fff;
+        padding: 10px;
+        justify-content: center;
+        width:100%;
+        align-items: center;
+        /*height:100%;*/ 
+    }}
+
+  @media(min-width:1230px){
+    #nestedFootGrid{
         display:grid;
         grid-template-columns: 30vw 30vw 30vw;
         grid-template-rows: auto;
