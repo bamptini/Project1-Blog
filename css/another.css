@@ -21,7 +21,6 @@ body{
     color: #444;
 }
 
-
 .box{
     display:flex;
     flex-direction: row;
@@ -44,7 +43,34 @@ body{
     margin:auto;
 }
 
+.nested-box2{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    /*border: 5px solid rgb(213, 248, 13);*/
+    /*background: #F8FA9D;*/
+    margin:auto;
+}
+
 .footer-box{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    /*border: 1px solid red;*/
+    /*background: #F8FA9D;*/
+    width:100%;
+}
+
+.footer-box{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    /*border: 1px solid red;*/
+    /*background: #F8FA9D;*/
+    width:100%;
+}
+
+.header-box{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -57,72 +83,62 @@ body{
     display:flex;
     background-color : #fff;
     margin:auto;
-    grid-area:nav;
-    height: 10vh;
+    /*grid-area:nav;*/
+    /*height: 10vh;*/
     justify-content: center;
-    width:100%;
+    /*width:100%;*/
     /*position: fixed;*/ 
-  }
+}
 
-  .header{
-    /* row start/column start/ row end/ column end */
+.header{
     display: flex;
     box-direction: row;
     grid-area:hd;
     justify-content:center;
-  }
+}
 
-  .header img{
+.header img{
     object-fit: contain;
     width: 60vw;
-  }
+}
 
-  .footer{
+.footer{
     margin:auto;
     grid-area:ft;
     height: 40vh;
     justify-content: center;
     /*position: fixed;*/ 
     background-color: #444; 
-  }
+}
 
-  /*.sidebar{
-    grid-area: sd;
-  }*/
-
-  .content{
+.content{
     grid-area: main;
-  }
+}
 
- /* Navbar class
-  .navbar{
-    display:flex;
-    background-color : #444;
-  }*/
  /* Navbar syle */
-  .nav-bar a {
-    color: #444;
-    padding: 14px 20px;
+.nav-bar a {
+    background-color: #444;
+    /*padding: 14px 20px;*/
     text-decoration: none;
     text-align: center;
-    padding-top: 30px;
-
-  }
+    width:120px;
+    margin: 2px;
+    color: rgb(250, 246, 246);
+    opacity: 0.6;
+    transition: 0.3s;
+    /*padding-top: 30px;*/
+}
 
   /* Navbar interactive */
-.navbar a:hover {
-    background-color: #ddd;
-    color: rgb(0, 0, 0);
-  }
+.nav-bar a:hover {
+   opacity: 1;
+}
 
-
-.nestedGrid{
-    /*display:flex;
-    flex-direction: row;*/
+#nestedGrid{
     display:grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(1, minmax(200px, auto));*/
-    grid-template-columns: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, auto));
+    /*grid-template-columns: auto;*/
     /*grid-template-rows:90vh;*/
     grid-template-areas: 
     "card1" 
@@ -147,35 +163,18 @@ body{
     /*width: 90vw;*/
 }
 
-@media(min-width:1250px){
-.nestedGrid{
-    /*display:flex;
-    flex-direction: row;*/
+#nestedHeaderGrid{
     display:grid;
-    /*grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);*/
-    grid-template-columns: 30vw 30vw 30vw;
-    grid-template-rows:45vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 60px 60px;
     grid-template-areas: 
-    "card1" "card2" "card3";
+    "topnav"
+    "toptext" ;
     grid-gap: 15px;
-    /*border: 5px solid rgb(39, 177, 26);*/
+    /*border: 5px solid rgb(80, 31, 158);*/
     justify-content: center;
     /*width: 90vw;*/
-}}
-
-@media(min-width:1250px){
-    #nestedFootGrid{
-        display:grid;
-        grid-template-columns: 30vw 30vw 30vw;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "twitter" "facebook" "email";
-        grid-gap: 15px;
-        /*border: 5px solid rgb(39, 177, 26);*/
-        justify-content: center;
-
-}}
+}
 
 .card {
     display:flex;
@@ -202,7 +201,6 @@ body{
     color: white;
 }
 
-
 .card p {
 	text-align: center;
 	border: 1px;
@@ -216,26 +214,24 @@ body{
 }
 
 .card1{
-    /* row start/column start/ row end/ column end */
     grid-area: card1;
-    width: 33vw;
+    width: /*33vw*/ 300px;
     height: 300px;
 }
 
 .card2{
     grid-area: card2;
-    width: 33vw;
+    width: /*33vw*/ 300px;
     height: 300px;
 }
 
 .card3{
     grid-area: card3;
-    width: 33vw;
+    width: /*33vw*/ 300px;
     height: 300px;
 } 
 
 .con1{
-    /* row start/column start/ row end/ column end */
     grid-area: twitter;
     width: 33vw;
     height: 300px;
@@ -277,18 +273,15 @@ body{
 }
 
 
-.twit{
-    /* row start/column start/ row end/ column end */
+.twit{ 
     grid-area: twitter; 
 }
 
 .face{
-    /* row start/column start/ row end/ column end */
     grid-area: facebook;   
 }
 
 .mail{
-    /* row start/column start/ row end/ column end */
     grid-area: mail;    
 }
 
@@ -307,16 +300,31 @@ body{
     width: 33vw;  
 }
 
-/*.content{
-    display: grid;
-    grid-template-columns: repeat(3, 0fr);
-    grid-template-rows: repeat(1, 1fr);
-    justify-content: center; 
-}*/
+.topnav{
+    grid-area: topnav;    
+}
+
+.toptext{
+    grid-area: toptext;
+    justify-content: center;    
+}
+
+.intro{    
+    align-items: center;  
+    color:chocolate;
+    margin:auto ; 
+}
+
+.title p{    
+    text-align: center; 
+    color:chocolate;
+    margin:auto; 
+    font-size: larger;
+}
 
 .content .card {
 	position: relative;
-	width: 30vw /*380px;*/;
+	width: /*30vw*/ 300px;;
     font-family: Helvetica, sans-serif;
 	margin: 0 auto;
 	background: #333;
@@ -329,8 +337,6 @@ body{
     border:solid;
     border-width: 1px 1px 1px 1px;
     border-color: rgb(204, 200, 200);
-    
-    
 }
 
 .w3-circle{
@@ -360,23 +366,36 @@ body{
     color: #0079B1;
     text-align: center;
     font-size: 12px;
-
 }
 
-/*@media(min-width:1000px){
-#nestedGrid{
-    /*display:flex;
-    flex-direction: row;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:repeat(1, 3fr);
-    grid-template-areas: 
-    "card1" 
-    "card2" 
-    "card3";
-    grid-gap: 10px;
-    border: 5px solid rgb(80, 31, 158);
-    justify-content: center;
-}
-}   */
+@media(min-width:1250px){
+    #nestedGrid{
+        /*display:flex;
+        flex-direction: row;*/
+        display:grid;
+        /*grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);*/
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows:45vh;
+        grid-template-areas: 
+        "card1" "card2" "card3";
+        grid-gap: 15px;
+        /*border: 5px solid rgb(39, 177, 26);*/
+        justify-content: center;
+        /*width: 90vw;*/
+    }}
+    
+    @media(min-width:1250px){
+        #nestedFootGrid{
+            display:grid;
+            grid-template-columns: 30vw 30vw 30vw;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "twitter" "facebook" "email";
+            grid-gap: 15px;
+            /*border: 5px solid rgb(39, 177, 26);*/
+            justify-content: center;
+    
+    }}
+
 
