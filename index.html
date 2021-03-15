@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    
     
     <link rel="stylesheet" href="css/another.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <!--link rel="stylesheet" href="css/navbar.css"-->
    
   </head>
 
@@ -23,7 +23,7 @@
     </div>
 
   <div class="grid-container">
-    <div class="header">
+    <header class="header">
         <div id="nestedHeaderGrid" class="header-box">     
                 <div class="nav-bar topnav">
                     <a href="about.html">About</a>
@@ -33,54 +33,59 @@
                 </div>
 
                 <div class="intro toptext">
-                    <p>Here you can discover a little bit more about me, my classic mini and some of the renovation work I have completed.</p>
+                    <p><q>Here you can discover a little bit more about me, my classic mini and some of the renovation work I have completed</q>.</p>
                 </div>
         </div>
-    </div>
+    </header>
     <br>
-      <div class="content nested-box">
+    <main class="content nested-box">
         <div id="nestedGrid" class="nested-box">
                 <div class="card">
                  <!--CARD 1-->
                     <div class="card1">
                         <!-- div class="cardimg"-->
                         <p><a href="life.html">
-                            <img src="images/avatar3.png" class="w3-circle"
-                            alt="Avatar"></a>
+                            <figure>
+                            <img src="images/avatar3.png" class="w3-circle" alt="Avatar"></a>
+                        <figcaption class="figcap-font">this is me</figcaption>    
+                        </figure>
                         </p>
                         <div class="card-details">
-                            <h2>Life</h2><span><h2>All about me</h2></span>
+                            <h2>Life</h2><span><h2><i>All about me</i></h2></span>
                         </div>
                         </div></div>
-
                 <div class="card">
-                    <!--CARD 2-->
-                <div class="card2">
-                    <!-- div class="cardimg"-->
-                    <p><a href="car.html">
-                        <img src="images/mini2.jpg" class="w3-circle"
-                        alt="Avatar"></a>
-                    </p>
-                    <div class="card-details">
-                        <h2>Car</h2><span><h2>Mini Adventures</h2></span>
-                    </div>
-                    </div></div>
 
-                <div class="card">
+                <!--CARD 2-->
+                    <div class="card2">
+                        <!-- div class="cardimg"-->
+                        <p><a href="car.html">
+                            <figure>
+                            <img src="images/mini2.jpg" class="w3-circle"alt="Avatar"></a>
+                            <figcaption class="figcap-font">nice car</figcaption>    
+                        </figure>
+                        </p>
+                        <div class="card-details">
+                            <h2>Car</h2><span><h2><i>Mini Adventures</i></h2></span>
+                        </div>
+                        </div></div>
+                    <div class="card">
                     <!--CARD 2-->
                 <div class="card3">
                     <!-- div class="cardimg"-->
                     <p><a href="work.html">
-                        <img src="images/LaHargue2.jpg" class="w3-circle"
-                        alt="Avatar"></a>
+                        <figure>
+                        <img src="images/LaHargue2.jpg" class="w3-circle" alt="Avatar"></a>
+                        <figcaption class="figcap-font">great job</figcaption>    
+                        </figure>
                     </p>
                     <div class="card-details">
-                        <h2>Work</h2><span><h2>Renovation Projects</h2></span>
+                        <h2>Work</h2><span><h2><i>Renovation Projects</i></h2></span>
                     </div>
             </div></div>
         </div>
-    </div> <br><br>
-    <div class="footer footer-box">
+    </main> <br><br>
+    <footer class="footer footer-box">
 
         <div class="footer-text1">
             <div><p>BE SOCIAL</p><br><br></div>
@@ -99,7 +104,7 @@
             <div i class="fab fa-facebook fa-3x"></i></div></div></div>
         </div>
         <div class="footer-text2"><p>FRONT END DEVELOPER : PROJECT 1</p></div>
-    </div>    
+    </footer>    
   </div>
   </body>
 </html>
