@@ -269,7 +269,8 @@ body {
     font-size: 26px;
 }
 
-#imgLife1{    
+#imgLife1{  
+
     background-image: url('../images/avatar3.png');
     /* background-size: contain;
     */
@@ -610,21 +611,6 @@ body {
     
     }}
 
-  /*@media(min-width:1100px){
-  #nestedGrid-container {
-    display: grid;
-    /*grid-auto-rows: (minmax)auto;
-    grid-template-columns: repeat(3, 30%);*/
-    /*grid-template-rows: 50px 50px 50px;
-    grid-auto-rows: 33% 33% 33%;
-    grid-template-columns: repeat(3, 33%);
-    grid-gap: 10px;
-    background-color: #173a57;
-    padding: 10px;
-    justify-content: center;
-    height:100%;
-    margin:auto;
-  }}*/
   
 
   

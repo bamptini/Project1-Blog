@@ -12,7 +12,6 @@
     
     <link rel="stylesheet" href="css/another.css">
     <!--link rel="stylesheet" href="css/navbar.css"-->
-   
   </head>
 
   <body>
@@ -26,10 +25,10 @@
     <header class="header">
         <div id="nestedHeaderGrid" class="header-box">     
                 <div class="nav-bar topnav">
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="links.html">Links</a>
-                    <a href="recommended.html">Recommended</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="links.html">Links</a>
+                    <a class="nav-link" href="recommended.html">Recommended</a>
                 </div>
 
                 <div class="intro toptext">
@@ -88,7 +87,7 @@
     <footer class="footer footer-box">
 
         <div class="footer-text1">
-            <div><p>BE SOCIAL</p><br><br></div>
+            <div><p>BE SOCIAL</p></div>
         
         <div id="nestedFootGrid">
             <div class="con">
@@ -102,8 +101,32 @@
             <div class="con">    
             <div class="mail">
             <div i class="fab fa-facebook fa-3x"></i></div></div></div>
+        </div></div></div>
+        <!--div class="footer-text2"><p>FRONT END DEVELOPER : PROJECT 1</p></div-->
+        
+	<!--Request Book-->
+
+	  <div class="">
+        <div class="row">
+        <div class="col">
+        <p class="detailfont-small-blue">Request a PDF copy of my book</p>
         </div>
-        <div class="footer-text2"><p>FRONT END DEVELOPER : PROJECT 1</p></div>
+        </div>
+        <table id="questionaire" class="container-fluid box2-padding"><tbody>
+        <form class="form-group">
+        <tr><td width="0%">
+        <span style="font-size: 18px !important; color: #FFB000;">EMAIL &nbsp</td><td>
+        <input type="text" maxlength="50" size="50" name="email" id="email_input"></td>
+        <td colspan="6">
+        <input type="button" class="btn btn-success btn-sm" name="Button" onClick="handleSendingEmail()" value="Request Book">
+        </form></td><td></td>
+        <td>&nbsp;</td></tr></table>
+          
+      </div>
+        
+    </div>
+        <br>
+        </div></div>
     </footer>    
   </div>
   </body>
