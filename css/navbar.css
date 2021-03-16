@@ -6,7 +6,7 @@
 }
 
  /* Navbar syle */
- .nav-bar a {
+ .nav-bar .nav-link {
     background-color: #444;
     text-decoration: none;
     text-align: center;
